@@ -1,7 +1,8 @@
 .body {
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     align-items: center;
+    flex-direction: column;
 }
 .customcontainer {
     display: flex;
@@ -12,6 +13,7 @@
     height: 505px;
     border: 2px solid black;
     box-shadow: 9.95064px 9.95064px 0px #000000;
+    margin: auto;
 }
 .input {
     width: 319.12px;
@@ -23,7 +25,12 @@
 }
 .button {
     background-color: #D1F470;
-    width: 300px;
+    width: 280px;
     height: 80px;
     border: 1.65844px solid #D1F470;
+}
+.select{
+    width: 150px;
+    height: 100px;
+    
 }
