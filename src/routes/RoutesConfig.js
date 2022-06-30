@@ -12,11 +12,11 @@ function RoutesConfig(){
     <Router>
 
         <Link to="/"></Link>
-        <Link to="/home">Home</Link>
-        <Link to="/contactsView">ContactsView</Link>
-        <Link to="/login">Login</Link>
-        <Link to="/register">Register</Link>
-        <Link to="/personalButton">PersonalButton</Link>
+        <Link to="/home"></Link>
+        <Link to="/contactsView"></Link>
+        <Link to="/login"></Link>
+        <Link to="/register"></Link>
+        <Link to="/personalButton"></Link>
 
 
         <Routes>

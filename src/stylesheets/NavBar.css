@@ -1,0 +1,51 @@
+.navbar-container img.profileIcon{
+    width: 50px;
+    height: 50px;
+    
+} 
+
+div.navbar-container{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    align-items: center;
+    padding: 30px;
+    text-align: left;
+    width: 1640px;
+    
+}
+
+.navbar-icon{
+    color: none;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+}
+
+button.btn.btn-secondary{
+    background-color: #2D1F30;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+}
+
+svg{
+    width: 50px;
+    height: 50px;
+    color: none;
+}
+
+/* .navbar-container{
+    display: flex;
+    justify-content: center;
+} */
+
+button.btn.btn-secondary{
+    color: #000000;
+    background-color: transparent;
+} 
+
+

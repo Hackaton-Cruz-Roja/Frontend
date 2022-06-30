@@ -1,10 +1,11 @@
 import './App.css';
-import RoutesConfig from './routes/RoutesConfig.js'
+import RoutesConfig from './routes/RoutesConfig.js';
+import NavBar from './components/NavBar.js';
 
 function App() {
   return (
     <div className="App">
-      <h1>hola</h1>
+      <NavBar/>
       <RoutesConfig/>
     </div>
   );
