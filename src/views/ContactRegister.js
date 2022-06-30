@@ -6,7 +6,6 @@ function ContactRegister(){
 
     const [phone, setPhone] = useState("");
     const [fullName, setFullName] = useState("");
-    const [photo, setPhoto] = useState("");
     
     const handleSubmit = event => {
         event.preventDefault();
@@ -15,7 +14,6 @@ function ContactRegister(){
             body: JSON.stringify({
         phone: phone,
         fullName: fullName,
-        photo: photo,
         }),
         });
     }

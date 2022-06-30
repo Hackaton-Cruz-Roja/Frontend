@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '../stylesheets/LoginComp.css';
 import ProfileIcon from '../media/profileIcon.png';
-import { Route } from 'react-router-dom';
 
 const LoginComp = () => {
 
@@ -34,13 +33,16 @@ const LoginComp = () => {
     })
 
     result = await result.json()
-
+    
+    console.log(result)
+    
+    let token = parseJwt(result.token)
+    console.log(token);
+    
     if(result.token) {
         window.location.href='Home'
     }
 
-    let token = parseJwt(result.token)
-    console.log(token);
 
     }
 
