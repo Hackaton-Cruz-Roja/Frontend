@@ -1,7 +1,6 @@
 import '../stylesheets/NavBar.css';
 import {CgMenuBoxed} from 'react-icons/cg';
 import 'bootstrap/dist/css/bootstrap.css';
-// import { useNavigate } from 'react-router-dom';
 import {Dropdown, DropdownItem, DropdownMenu, DropdownToggle} from 'reactstrap';
 import React,{useState} from 'react';
 
@@ -30,7 +29,9 @@ function NavBar(){
                 </DropdownMenu>
 
             </Dropdown>
-            <img className="profileIcon" src={require('../media/profileIcon.png')} alt="profileIcon" />
+            <a href="Login">
+                <img className="profileIcon" src={require('../media/profileIcon.png')} alt="profileIcon" />
+            </a>
         </div>
     );
 }

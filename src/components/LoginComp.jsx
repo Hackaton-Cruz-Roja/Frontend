@@ -35,8 +35,12 @@ const LoginComp = () => {
 
     result = await result.json()
 
+    if(result.token) {
+        window.location.href='Home'
+    }
+
     let token = parseJwt(result.token)
-    //console.log(token);
+    console.log(token);
 
     }
 
