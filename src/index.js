@@ -1,21 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-
-//import App from './App';
-import Map from './components/Map';
-import Geolocalization from './components/Geolocalization';
-
+import App from './App';
 //import reportWebVitals from './reportWebVitals';'
-
-
-//const mapURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&key=${credentials.mapsKey}`
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-    <Map />
+    <App />
 
   </React.StrictMode>
 );

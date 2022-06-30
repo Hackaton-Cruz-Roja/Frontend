@@ -1,9 +1,9 @@
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
-import Home from '../Views/Home';
-import Login from '../Views/Login';
-import Register from '../Views/Register';
-import ContactsView from '../Views/ContactsView';
-import PersonalButton from '../Views/PersonalButton';
+import Home from '../views/Home';
+import Login from '../views/Login';
+import Register from '../views/Register';
+import ContactsView from '../views/ContactsView';
+import PersonalButton from '../views/PersonalButton';
 
 
 function RoutesConfig(){
