@@ -1,19 +1,10 @@
 # 📸  DDROP  📸
 
 ## USAGE
-![Captura de pantalla 2022-06-26 a las 1 15 44](https://user-images.githubusercontent.com/99019637/175793262-e05ba2ee-4c6e-46f6-9598-fbcdfe4d7981.png)
-![Captura de pantalla 2022-06-26 a las 1 16 18](https://user-images.githubusercontent.com/99019637/175793260-91c54ba7-7c43-4641-8409-ebf36ff729ca.png)
-
-
-<img width="1511" alt="Captura de Pantalla 2022-06-19 a las 19 52 01" src="https://user-images.githubusercontent.com/99019637/174497039-85504fbc-3a7e-496c-88fa-ab560c8e4960.png">
-
-<img width="1526" alt="Captura de Pantalla 2022-06-19 a las 19 52 23" src="https://user-images.githubusercontent.com/99019637/174497058-2e11bd33-4780-42e0-922c-43d5633c0a63.png">
-
+-----
 
 ## ⌛ SOBRE EL PROYECTO ⌛
-Este es un proyecto que forma parte de la fase online de la Hackathon que se organiza en el marco del proyecto BCN Inclusive Coding. 
-
-El reto consiste en resolver un encargo antes del 19 de junio de 2022, con el objetivo de mejorar la experiencia de usuario al subir arhivos a una web y, como extra, hacer que estos se puedan conectar con la API de Google Drive.
+Este es un proyecto que forma parte de un Hackathon que se organiza en el marco del proyecto BCN Inclusive Coding. 
 
 #### Las historias de usuarix son las siguientes:
 - Desarrollar las vistas que se observan más arriba.
