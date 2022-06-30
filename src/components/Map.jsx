@@ -1,6 +1,5 @@
 import React from 'react'
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
-import Geolocalization from './Geolocalization';
 
 const containerStyle = {
   width: '100vw',
@@ -16,7 +15,7 @@ function MyComponent() {
   
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: process.env.REACT_APP_NEXT_PUBLIC_MAPS_HACKATHON,
+    googleMapsApiKey: "AIzaSyCe_zIfU7Q87UNLI74zUCiSjA3eUUm1KnI",
   })
 
   const [map, setMap] = React.useState(null)
