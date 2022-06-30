@@ -1,8 +1,11 @@
 import React from 'react'
+import LoginComp from '../components/LoginComp.js'
 
 function Login(){
     return(
-        <div>login</div>
+        <div>
+            <LoginComp/>
+        </div>
     );
 }
 

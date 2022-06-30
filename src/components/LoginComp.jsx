@@ -1,7 +1,7 @@
 import React from 'react'
 import '../stylesheets/Login.css'
 
-const Login = () => {
+const LoginComp = () => {
     return (
         <section>
             <svg width="137" height="142" viewBox="0 0 137 142" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,4 +40,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default LoginComp;
