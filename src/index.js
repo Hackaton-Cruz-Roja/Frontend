@@ -5,7 +5,7 @@ import './index.css';
 import App from './App';
 =======
 //import App from './App';
-import Geolocalization from './components/Geolocalization'
+import Maps from './components/Maps'
 //import reportWebVitals from './reportWebVitals';
 >>>>>>> 0cafb02d4024f5c69d8b5080c957749c3d7ecc68
 
@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-    <Geolocalization />
+    <Maps />
 
   </React.StrictMode>
 );
