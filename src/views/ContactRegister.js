@@ -25,6 +25,8 @@ function ContactRegister(){
             <form onSubmit={handleSubmit}>
                 <input type="text" id="phone" name="phone" placeholder="telefono" onChange={(e) => setPhone(e.target.value)}></input>
                 <input type="text" id="fullName" name="fullName" placeholder="Nombre completo" onChange={(e) => setFullName(e.target.value)}></input>
+                <input type="email" id="photo" name="photo" placeholder="photo" onChange={(e) => setPhoto(e.target.value)}></input>
+
                 <select name="asignacion" id="asignacion">
                     <option value="green">He llegado</option>
                     <option value="yellow">Necesito Ayuda</option>
