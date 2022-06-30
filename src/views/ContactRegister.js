@@ -7,6 +7,11 @@ function ContactRegister(){
 
     return(
         <div className="customcontainer">
+            <div className="burguer">
+                <div className="burguerline"></div>
+                <div className="burguerline"></div>
+                <div className="burguerline"></div>
+            </div>
             <form>
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre"></input>
                 <input type="text" id="telefono" name="telefono" placeholder="Teléfono"></input>

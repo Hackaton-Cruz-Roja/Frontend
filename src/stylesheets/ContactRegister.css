@@ -3,6 +3,7 @@
     justify-content: space-around;
     align-items: center;
 }
+
 .customcontainer {
     display: flex;
     flex-direction: column;
@@ -12,8 +13,11 @@
     height: 505px;
     border: 2px solid black;
     box-shadow: 9.95064px 9.95064px 0px #000000;
-
 }
 .addbutton {
+    width: 30%;
+    height: 30%;
+    background: #C79EF8;
+    border: 2px solid #000000;
     box-shadow: 6px 6px 0px #000000;
 }
