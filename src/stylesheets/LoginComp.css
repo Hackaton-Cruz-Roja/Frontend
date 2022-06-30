@@ -16,6 +16,8 @@ section {
     border-radius: 42px;
     margin: 20px;
     padding: 20px;
+    color: #1D1D1B;
+    
 }
 
 .loginInput {
@@ -28,7 +30,6 @@ section {
     box-shadow: 6px 6px 0px #000000;
     margin: 10px;
     text-align: center;
-    font-weight: 700;
 }
 
 .loginInput::-moz-placeholder {
@@ -55,3 +56,4 @@ img.profile-icon{
     width: 80px;
     height: 80px;
 }
+
