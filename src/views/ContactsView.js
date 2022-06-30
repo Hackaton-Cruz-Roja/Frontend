@@ -9,7 +9,7 @@ function ContactsView(){
     return(
         <div className="container">
             <h1 className="title">Mis contactos de confianza</h1>
-            <img className= "logo"
+            <img className= "addIcon"
             src= { PlusIcon }
             alt="plus Icon"/>
         </div>
