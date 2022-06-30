@@ -1,20 +1,9 @@
-import React,{useState} from 'react'
+import React from 'react'
 import '../stylesheets/RegisterComp.css'
 import ProfileIcon from '../media/profileIcon.png';
 
 const RegisterComp = () => {
-  const [identificator, setIdentificator] = useState("");
-    const handleSubmit = event => {
-        event.preventDefault();
-        let res = fetch("https://hackathon-final.herokuapp.com/contact/create", {
-            method: "POST",
-            body: JSON.stringify({
-        identificator: identificator,
-        fullName: fullName,
-        photo: photo,
-        }),
-        });
-    }
+  
   return (
     <section>
         <img className="profile-icon" src={ ProfileIcon } alt="profilepic"/>
