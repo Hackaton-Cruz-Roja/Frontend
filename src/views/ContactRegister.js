@@ -14,7 +14,7 @@ function ContactRegister(){
             body: JSON.stringify({
         phone: phone,
         fullName: fullname,
-        photo: null,
+        photo: photo,
         }),
         });
     }
