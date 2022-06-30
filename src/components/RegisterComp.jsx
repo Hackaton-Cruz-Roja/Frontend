@@ -2,7 +2,7 @@ import React from 'react'
 import '../stylesheets/RegisterComp.css'
 import ProfileIcon from '../media/profileIcon.png';
 
-const Register = () => {
+const RegisterComp = () => {
   return (
     <section>
         <img className="profile-icon" src={ ProfileIcon } alt="profilepic"/>
@@ -19,4 +19,4 @@ const Register = () => {
   )
 }
 
-export default Register
+export default RegisterComp;
