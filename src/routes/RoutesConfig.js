@@ -4,6 +4,7 @@ import Login from '../views/Login';
 import Register from '../views/Register';
 import ContactsView from '../views/ContactsView';
 import PersonalButton from '../views/PersonalButton';
+import ContactRegister from '../views/ContactRegister';
 
 
 function RoutesConfig(){
@@ -12,11 +13,12 @@ function RoutesConfig(){
     <Router>
 
         <Link to="/"></Link>
-        <Link to="/home">Home</Link>
-        <Link to="/contactsView">ContactsView</Link>
-        <Link to="/login">Login</Link>
-        <Link to="/register">Register</Link>
-        <Link to="/personalButton">PersonalButton</Link>
+        <Link to="/home"></Link>
+        <Link to="/contactsView"></Link>
+        <Link to="/login"></Link>
+        <Link to="/register"></Link>
+        <Link to="/personalButton"></Link>
+        <Link to="/contactRegister"></Link>
 
 
         <Routes>
@@ -25,7 +27,8 @@ function RoutesConfig(){
             <Route path="/login" element={ <Login/> } />
             <Route path="/register" element={ <Register/> } />
             <Route path="/contactsView" element={ <ContactsView/> } />
-            <Route path="/contactsView" element={ <PersonalButton/> } />
+            <Route path="/personalButton" element={ <PersonalButton/> } />
+            <Route path="/contactRegister" element={ <ContactRegister/> } />
 
         </Routes>
 

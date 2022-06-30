@@ -1,0 +1,12 @@
+
+h1.title{
+    font-weight: 700;
+    font-size: 40px;
+    display:flex;
+    justify-content:center;
+    text-align: center;
+}
+
+img.addIcon{
+    margin: 7.5rem;
+}

@@ -28,6 +28,7 @@ section {
     box-shadow: 6px 6px 0px #000000;
     margin: 10px;
     text-align: center;
+    font-weight: 700;
 }
 
 .loginInput::-moz-placeholder {
@@ -48,4 +49,9 @@ button {
     box-shadow: 6px 6px 0px #000000;
     margin-top: 20px;
     margin-bottom: 40px;
+}
+
+img.profile-icon{
+    width: 80px;
+    height: 80px;
 }
