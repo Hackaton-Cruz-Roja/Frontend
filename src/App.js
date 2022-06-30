@@ -5,8 +5,8 @@ import NavBar from './components/NavBar.js';
 function App() {
   return (
     <div className="App">
-      <RoutesConfig/>
       <NavBar/>
+      <RoutesConfig/>
     </div>
   );
 }
