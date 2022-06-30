@@ -2,26 +2,39 @@ import React from 'react';
 import '../stylesheets/ContactRegister.css'
 
 
+
+
 function ContactRegister(){
 
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [mobile, setMobile] = useState("");
+    
+    const handleSubmit = event => {
+        event.preventDefault();
+        let res = await fetch("https://httpbin.org/post", {
+            method: "POST",
+            body: JSON.stringify({
+        name: name,
+        email: email,
+        mobile: mobile,
+        }),
+        });
+    }
 
     return(
-        <div className="customcontainer">
-            <div className="burguer">
-                <div className="burguerline"></div>
-                <div className="burguerline"></div>
-                <div className="burguerline"></div>
-            </div>
+        <div>
             <form>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre"></input>
-                <input type="text" id="telefono" name="telefono" placeholder="Teléfono"></input>
+                <input type="text" id="name" name="name" placeholder="Nombre" onChange={(e) => setName(e.target.value)}></input>
+                <input type="text" id="mobile" name="mobile" placeholder="Teléfono" onChange={(e) => setEmail(e.target.value)}></input>
+                <input type="email" id="email" name="email" placeholder="Email" onChange={(e) => setMobile(e.target.value)}></input>
                 <label for="asignacion">Botón a asignar</label>
                 <select name="asignacion" id="asignacion">
                     <option value="green">Botón OK</option>
                     <option value="yellow">Botón Ayuda</option>
                     <option value="red">Botón Emergencia</option>
                 </select>
-                <div className="addbutton">Añadir contacto</div>
+                <button className="addbutton" type="submit">Añadir contacto</button>
             </form>
         </div>
     );
