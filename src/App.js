@@ -1,6 +1,6 @@
 import './App.css';
-import RoutesConfig from './routes/RoutesConfig.js';
-import NavBar from './components/NavBar.js';
+import RoutesConfig from './routes/RoutesConfig';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
