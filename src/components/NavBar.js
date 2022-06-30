@@ -27,7 +27,7 @@ function NavBar(){
                 </DropdownMenu>
 
             </Dropdown>
-            <img className="image" src={require('../media/profileIcon.png')} alt="profileIcon" />
+            <img className="profileIcon" src={require('../media/profileIcon.png')} alt="profileIcon" />
         </div>
     );
 }
