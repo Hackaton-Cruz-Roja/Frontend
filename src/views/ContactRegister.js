@@ -12,7 +12,7 @@ function ContactRegister(){
     
     const handleSubmit = event => {
         event.preventDefault();
-        let res = await fetch("https://httpbin.org/post", {
+        let res = await fetch("", {
             method: "POST",
             body: JSON.stringify({
         name: name,
