@@ -1,17 +1,19 @@
 import React, {useEffect} from 'react'
 import '../stylesheets/Button.css'
-const data = '';
-const text ='';
 
-useEffect(() => {
-    const response = await fetch('https://hackathon-final.herokuapp.com/configuration/create')
-        .then(response => response.json())
-        .then(data=> text = data);
-}, []);
+// useEffect(() => {
+//     const response = await fetch('https://hackathon-final.herokuapp.com/configuration/create')
+//         .then(response => response.json())
+//         .then(data=> text = data);
+// }, []);
 
-function Button(text){
+function Button({text, onClick}){
     return(
-        <div className="button">{text}</div>
+        <div
+        className="button"
+        onClick={onClick}>
+            {text}
+        </div>
     );
 }
 
