@@ -1,4 +1,13 @@
+.body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .customcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     width: 335px;
     height: 505px;
     border: 2px solid black;
