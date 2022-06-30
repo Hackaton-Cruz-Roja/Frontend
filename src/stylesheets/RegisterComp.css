@@ -4,7 +4,7 @@ html, body {
     height: 100%;
 }
 img.profile-icon{
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 80px;
     height: 80px;
 }
@@ -20,8 +20,7 @@ section {
     box-shadow: 6px 6px 0px #000000;
     border-radius: 42px;
     margin: 2rem;
-    margin-bottom: 2rem;
-    padding: 20px;
+    padding: 10px;
 }
 
 .registerInput {
