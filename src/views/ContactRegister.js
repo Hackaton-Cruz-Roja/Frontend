@@ -1,5 +1,5 @@
 import React,{ useState} from 'react';
-import '../stylesheets/ContactRegister.css'
+import '../stylesheets/ContactRegister.css';
 
 
 function ContactRegister(){
@@ -10,7 +10,7 @@ function ContactRegister(){
     
     const handleSubmit = event => {
         event.preventDefault();
-        let res = fetch("https://hackathon-final.herokuapp.com/contact/create", {
+        fetch("https://hackathon-final.herokuapp.com/contact/create", {
             method: "POST",
             body: JSON.stringify({
         phone: phone,
@@ -18,11 +18,12 @@ function ContactRegister(){
         photo: photo,
         }),
         });
+
     }
 
     return(
         <div>
-            <form onSubmit={handleSubmit}>
+            <form>
                 <input type="text" id="phone" name="phone" placeholder="telefono" onChange={(e) => setPhone(e.target.value)}></input>
                 <input type="text" id="fullName" name="fullName" placeholder="Nombre completo" onChange={(e) => setFullName(e.target.value)}></input>
                 <input type="email" id="photo" name="photo" placeholder="photo" onChange={(e) => setPhoto(e.target.value)}></input>
@@ -32,7 +33,7 @@ function ContactRegister(){
                     <option value="yellow">Necesito Ayuda</option>
                     <option value="red">Llamar 112</option>
                 </select>
-                <button className="addbutton" type="submit">Añadir contacto</button>
+                <button className="addbutton" onClick={handleSubmit} type="submit">Añadir contacto</button>
             </form>
         </div>
     );
