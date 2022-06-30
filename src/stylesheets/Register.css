@@ -14,9 +14,9 @@ section {
     border: 2px solid #000000;
     box-shadow: 6px 6px 0px #000000;
     border-radius: 42px;
-    margin: 10px;
+    margin: 20px;
+    padding: 20px;
 }
-
 
 .registerInput {
     display: flex;
@@ -48,14 +48,4 @@ button {
     box-shadow: 6px 6px 0px #000000;
     margin-top: 20px;
     margin-bottom: 40px;
-}
-
-button::-moz-placeholder {
-    color: black;
-    font-weight: bold;
-}
-
-button::-moz-placeholder {
-    color: black;
-    font-weight: bold;
 }
