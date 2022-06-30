@@ -16,12 +16,12 @@
     margin: auto;
 }
 .input {
-    width: 319.12px;
-    height: 86.24px;
+    width: 300px;
+    height: 80px;
     background: #D1F470;
     border: 1.65844px solid #D1F470;
     box-shadow: 9.95064px 9.95064px 0px #000000;
-    margin: 3rem;
+    margin: 1rem;
 }
 .button {
     background-color: #D1F470;
@@ -30,7 +30,7 @@
     border: 1.65844px solid #D1F470;
 }
 .select{
-    width: 150px;
-    height: 100px;
+    width: 300px;
+    height: 50px;
     
 }

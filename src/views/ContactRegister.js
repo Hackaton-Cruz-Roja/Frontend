@@ -21,8 +21,8 @@ function ContactRegister(){
     }
 
     return(
-        <div className="customcontainer">
-            <form onSubmit={handleSubmit}>
+        <div>
+            <form className="customcontainer" onSubmit={handleSubmit}>
                 <input className="input" type="text" id="phone" name="phone" placeholder="telefono" onChange={(e) => setPhone(e.target.value)}></input>
                 <input  className="input" type="text" id="fullName" name="fullName" placeholder="Nombre completo" onChange={(e) => setFullName(e.target.value)}></input>
                 <select  className="select" name="asignacion" id="asignacion">
