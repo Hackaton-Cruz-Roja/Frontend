@@ -1,27 +1,36 @@
-import React, {useState} from 'react';
+import React, {useEffect} from 'react'
 import '../stylesheets/ContactRegister.css'
 
-function ContactRegister(){
+function ButtonConfig(){
 
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [mobile, setMobile] = useState("");
+    const contacts=[];
+
+    useEffect(() => {
+    const response = await fetch('https://hackathon-final.herokuapp.com/configuration/create%27')
+        .then( response => response.json())
+        .then(data=> contacts = data);
+}, []);
+
+    const [type, setType] = useState("");
+    const [message, setMessage] = useState("");
+    const [contact, setContact] = useState("");
     
     const handleSubmit = event => {
         event.preventDefault();
-        fetch("https://hackathon-final.herokuapp.com/contact/create", {
+        let res = await fetch("", {
+            'Authorization': token,
             method: "POST",
             body: JSON.stringify({
-        phone: phone,
-        fullname: fullname,
-        photo: null,
+        type: type,
+        message: message,
+        contact: contact,
         }),
         });
     }
 
     return(
         <div>
-            <form onSubmit={handleSubmit}>
+            <form>
                 <input type="text" id="name" name="name" placeholder="Nombre" onChange={(e) => setName(e.target.value)}></input>
                 <input type="text" id="mobile" name="mobile" placeholder="Teléfono" onChange={(e) => setEmail(e.target.value)}></input>
                 <input type="email" id="email" name="email" placeholder="Email" onChange={(e) => setMobile(e.target.value)}></input>
