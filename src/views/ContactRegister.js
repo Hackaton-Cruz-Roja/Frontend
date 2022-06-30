@@ -4,7 +4,7 @@ import '../stylesheets/ContactRegister.css'
 function ContactRegister(){
 
     const [phone, setPhone] = useState("");
-    const [fullname, setFullname] = useState("");
+    const [fullname, setFullName] = useState("");
     const [photo, setPhoto] = useState("");
     
     const handleSubmit = event => {
@@ -13,7 +13,7 @@ function ContactRegister(){
             method: "POST",
             body: JSON.stringify({
         phone: phone,
-        fullname: fullname,
+        fullName: fullname,
         photo: null,
         }),
         });
