@@ -2,9 +2,9 @@ import React from 'react';
 import '../stylesheets/ContactRegister.css'
 
 
-function ContactsView(){
+function ContactRegister(){
 
-    
+
     return(
         <div className="customcontainer">
             <form>
@@ -22,4 +22,4 @@ function ContactsView(){
     );
 }
 
-export default ContactsView;
+export default ContactRegister;

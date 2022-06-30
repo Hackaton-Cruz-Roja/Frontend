@@ -1,0 +1,10 @@
+.customcontainer {
+    width: 335px;
+    height: 505px;
+    border: 2px solid black;
+    box-shadow: 9.95064px 9.95064px 0px #000000;
+
+}
+.addbutton {
+    box-shadow: 6px 6px 0px #000000;
+}
