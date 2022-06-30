@@ -25,12 +25,10 @@ function ContactRegister(){
             <form onSubmit={handleSubmit}>
                 <input type="text" id="phone" name="phone" placeholder="telefono" onChange={(e) => setPhone(e.target.value)}></input>
                 <input type="text" id="fullName" name="fullName" placeholder="Nombre completo" onChange={(e) => setFullName(e.target.value)}></input>
-                <input type="email" id="photo" name="photo" placeholder="foto" onChange={(e) => setPhoto(e.target.value)}></input>
-                <label for="asignacion">Botón a asignar</label>
                 <select name="asignacion" id="asignacion">
-                    <option value="green">Botón OK</option>
-                    <option value="yellow">Botón Ayuda</option>
-                    <option value="red">Botón Emergencia</option>
+                    <option value="green">He llegado</option>
+                    <option value="yellow">Necesito Ayuda</option>
+                    <option value="red">Llamar 112</option>
                 </select>
                 <button className="addbutton" type="submit">Añadir contacto</button>
             </form>
