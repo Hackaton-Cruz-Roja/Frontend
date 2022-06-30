@@ -1,7 +1,7 @@
 import React from 'react'
 import { useGeolocated } from 'react-geolocated';
 
-const Geolocalzation = () => {
+const Geolocalization = () => {
     const { coords, isGeolocationAvailable, isGeolocationEnabled } =
         useGeolocated({
             positionOptions: {
@@ -10,12 +10,13 @@ const Geolocalzation = () => {
             userDecisionTimeout: 5000,
         });
 
-return !isGeolocationAvailable ? (
-    <div>Your browser does not support Geolocation</div>
-) : !isGeolocationEnabled ? (
-    <div>Geolocation is not enabled</div>
-) : coords ? (
-    <table>
+        
+        return !isGeolocationAvailable ? (
+            <div>Your browser does not support Geolocation</div>
+            ) : !isGeolocationEnabled ? (
+                <div>Geolocation is not enabled</div>
+                ) : coords ? (
+                    <table>
         <tbody>
             <tr>
                 <td>latitude</td>
@@ -41,7 +42,7 @@ return !isGeolocationAvailable ? (
     </table>
 ) : (
     <div>Getting the location data&hellip; </div>
-);
+    );
 };
 
-export default Geolocalzation;
+export default Geolocalization;

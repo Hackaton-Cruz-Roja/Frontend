@@ -1,5 +1,6 @@
 import React from 'react'
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+import Geolocalization from './Geolocalization';
 
 const containerStyle = {
   width: '100vw',
@@ -7,11 +8,12 @@ const containerStyle = {
 };
 
 const center = {
-  lat: -3.745,
-  lng: -38.523
+  lat: 41.39,
+  lng: 2.16
 };
 
 function MyComponent() {
+  
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: process.env.REACT_APP_NEXT_PUBLIC_MAPS_HACKATHON,
@@ -33,9 +35,12 @@ function MyComponent() {
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
-        zoom={10}
+        zoom={5}
         onLoad={onLoad}
         onUnmount={onUnmount}
+        marker={[
+          {lat: 41.39, lng: 2.16 }
+        ]}
       >
         { /* Child components, such as markers, info windows, etc. */ }
         <></>
