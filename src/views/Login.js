@@ -1,5 +1,5 @@
 import React from 'react'
-import LoginComp from '../components/LoginComp.jsx'
+import LoginComp from '../components/LoginComp'
 
 function Login(){
     return(
