@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 const data = '';
-const data ='';
+const text ='';
 
 useEffect(() => {
     const response = await fetch('https://hackathon-final.herokuapp.com/configuration/create')
