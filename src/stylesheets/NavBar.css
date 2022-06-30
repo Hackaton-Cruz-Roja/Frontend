@@ -1,7 +1,7 @@
 .navbar-container img.profileIcon{
     width: 50px;
     height: 50px;
-    
+
 } 
 
 div.navbar-container{
@@ -11,8 +11,6 @@ div.navbar-container{
     justify-content: space-between;
     padding: 30px;
     text-align: left;
-    width: 1640px;
-    
 }
 
 .navbar-icon{
@@ -42,6 +40,4 @@ svg{
 button.btn.btn-secondary{
     color: #000000;
     background-color: transparent;
-} 
-
-
+}
