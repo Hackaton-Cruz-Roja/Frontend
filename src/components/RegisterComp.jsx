@@ -27,7 +27,7 @@ const RegisterComp = () => {
   })
 
   result = await result.json()
-  console.warn("result", result)
+    console.warn("result", result)
   }
 
   return (

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../stylesheets/LoginComp.css';
 import ProfileIcon from '../media/profileIcon.png';
-
+import { Route } from 'react-router-dom';
 
 const LoginComp = () => {
 
@@ -34,9 +34,9 @@ const LoginComp = () => {
     })
 
     result = await result.json()
-    //console.warn("result", result)
-    //let token = parseJwt(result.data.token)
-    console.log(result.token);
+
+    let token = parseJwt(result.token)
+    //console.log(token);
 
     }
 
