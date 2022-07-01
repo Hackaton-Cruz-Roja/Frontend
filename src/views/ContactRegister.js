@@ -1,8 +1,11 @@
 import React,{ useState} from 'react';
 import '../stylesheets/ContactRegister.css'
 
+//In this view, user can edit a button changing text or adding/removing contacts to send the message.
+function ContactRegister({button}){
 
-function ContactRegister(){
+    //TODO: import prop: selected button.
+    //      Function editButton: makes a change in the selected button (text or contacts) via HTTP request.
 
     const [phone, setPhone] = useState("");
     const [fullName, setFullName] = useState("");
@@ -28,7 +31,7 @@ function ContactRegister(){
                     <option value="yellow">Necesito Ayuda</option>
                     <option value="red">Llamar 112</option>
                 </select>
-                <button className="addbutton" type="submit">Añadir contacto</button>
+                <button className="addbutton" type="submit" onClick={handleSubmit}>Añadir contacto</button>
             </form>
         </div>
     );

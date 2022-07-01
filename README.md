@@ -1,4 +1,4 @@
-# 📸  DDROP  📸
+# 📸  HAID  📸
 
 ## USAGE
 -----
@@ -43,8 +43,8 @@ En el backend se registra el usuario, así como los contactos y mensajes registr
 - React-router-dom
 - Trello
 - Heroku
-- Postgress
-- Springboots
+- Postgres
+- Springboot
 
 
 ## 👐 AGRADECIMIENTOS 👐

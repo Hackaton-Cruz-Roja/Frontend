@@ -1,34 +1,28 @@
 import '../stylesheets/NavBar.css';
 import {CgMenuBoxed} from 'react-icons/cg';
 import 'bootstrap/dist/css/bootstrap.css';
-import {Dropdown, DropdownItem, DropdownMenu, DropdownToggle} from 'reactstrap';
 import React,{useState} from 'react';
 
 
 function NavBar(){
 
-            // const navigate = useNavigate();
             const [dropdown, setDropdown] = useState(false);
     
             const openCloseDropdown = () => {
                 setDropdown(!dropdown);
+                // TODO: add or remove className 'visible' to dropdown-menu
             }
 
     return(
 
         <div className='navbar-container'>
-            <Dropdown isOpen = {dropdown} toggle = {openCloseDropdown} >
-                <DropdownToggle >
-                    <CgMenuBoxed />
-                </DropdownToggle >
+            <div className='menu' onClick= {openCloseDropdown} >{CgMenuBoxed}</div>
+            <div className='dropdown-menu'>
+                    <h3> Home </h3>
+                    <h3> Editar botones </h3>
+                    <h3> Editar contactos </h3>
+            </div>
 
-                <DropdownMenu>
-                    <DropdownItem> Home </DropdownItem>
-                    <DropdownItem > Añadir botones </DropdownItem>
-                    <DropdownItem> Añadir contactos </DropdownItem>
-                </DropdownMenu>
-
-            </Dropdown>
             <a href="Login">
                 <img className="profileIcon" src={require('../media/profileIcon.png')} alt="profileIcon" />
             </a>
