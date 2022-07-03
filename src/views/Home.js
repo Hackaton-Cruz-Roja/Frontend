@@ -1,21 +1,41 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import Button from '../components/Button.js';
 
 function Home(){
 
-useEffect(() => {
+    //Download custom buttons from API REST (with FETCH)
+    //Download contacts, so the first one can be associated with the pre-set buttons.
+   
+    // TODO: complete buttons fetch, add contacts fetch, add contact data to pre-set buttons
+    //       map the buttons fetch response to generate customButons nodes to be rendered.
+    
+        useEffect(() => {
+        
+        fetch ('https://hackathon-final.herokuapp.com/configuration/create%27')
+            .then(async response => {
+                const data = await response.json();
+                
+                //check for error response
+                if (!response.ok) {
+                    //get error message from body or default to response status
+                    const error = (data && data.message)
+                    return Promise.reject(error);
+                }
+                
+                setPostID(data.id);
+            })
+            .catch(error => {
+                setErrorMessage(error);
+                console.error('There was an error!', error);
+            });
+        }, []);
 
-//Download custom buttons from API REST (with FETCH)
-    const customButtonsData = await fetch ('https://hackathon-final.herokuapp.com/configuration/create%27')
-        .then(buttonResponse => buttonResponse.json())
-        .then(buttonData => console.log(buttonData));
-}, []);
 
     return(
         <div className="main-container" >
-            <Button text="Estoy bien" contacts="" isEnabled={true} />
-            <Button text="Necesito ayuda" contacts="" isEnabled={true} />
-            <Button text="Emergencia 112" contacts="" isEnabled={true} />
+            <Button text="Estoy bien" contacts={data.contact[0]} isEnabled={true} color='green' />
+            <Button text="Necesito ayuda" contacts={data.contact[0]} isEnabled={true} color='orange' />
+            <Button text="Emergencia 112" contacts={data.contact[0]} isEnabled={true} color='red' />
 
             {/* {customButtons} */}
         </div>
