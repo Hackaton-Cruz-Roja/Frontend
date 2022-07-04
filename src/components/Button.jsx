@@ -1,9 +1,9 @@
 import '../stylesheets/Button.css'
 
-function Button({text, contacts, isEnabled, color}){
+function Button({text, contacts, color}){
     
-// TODO: onClick funcion that sends message to contacts.
-//       add isEnabled and color
+// TODO: onClick function that sends message to contacts according to text, contacts, and geolocalization or not.
+//       Add color to button according to color prop.
 
     return(
         <div

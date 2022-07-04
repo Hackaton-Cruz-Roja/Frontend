@@ -38,6 +38,7 @@ const LoginComp = () => {
     
     let token = parseJwt(result.token)
     console.log(token);
+    //TODO: Save token in local storage.
     
     if(result.token) {
         window.location.href='Home'

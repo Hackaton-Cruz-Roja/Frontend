@@ -18,9 +18,15 @@ function NavBar(){
         <div className='navbar-container'>
             <div className='menu' onClick= {openCloseDropdown} >{CgMenuBoxed}</div>
             <div className='dropdown-menu'>
-                    <h3> Home </h3>
-                    <h3> Editar botones </h3>
-                    <h3> Editar contactos </h3>
+                    <div className="dropdown-menu-option">
+                        <h3> Home </h3>
+                    </div>
+                    <div className="dropdown-menu-option">
+                        <h3> Editar botones </h3>
+                    </div>
+                    <div className="dropdown-menu-option">
+                        <h3> Editar contactos </h3>
+                    </div>
             </div>
 
             <a href="Login">
