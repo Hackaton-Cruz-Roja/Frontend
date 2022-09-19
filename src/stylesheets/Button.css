@@ -1,12 +1,72 @@
+
 .button {
-    width: 319.12px;
-    height: 86.24px;
-    background: #D1F470;
-    border: 1.65844px solid #D1F470;
+    width: 300px;
+    height: 85px;
+    background: green;
     box-shadow: 9.95064px 9.95064px 0px #000000;
-    margin: 3rem;
+    margin: 0 auto;
     font-weight: 700;
     font-size: 33px;
     text-align: center;
     padding: 1rem;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.disabled {
+    display: none;
+}
+
+.disabled.editable {
+display: block;
+}
+
+.button-container .disabled {
+    opacity: 50%;
+}
+.amarillo {
+    background-color: #D1F470;
+    color: black;
+}
+.verde {
+    background-color: green;
+    color: white;
+}
+.rojo {
+    background-color: red;
+    color: white;
+}
+.azul {
+    background-color: blue;
+    color: white;
+}
+.emoji {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:70px;
+    height:70px;
+    background-color: white;
+    border-radius:50%;
+    transform: translate(-12px, -30px);
+    font-size: 2.5rem;
+    box-shadow: 4px 4px 0 black;
+    cursor: pointer;
+}
+.button.editable {
+    height: 40px;
+    margin: 15px auto;
+}
+.emoji.editable {
+    transform: translate(-12px, -20px);
+    width: 50px;
+    height:50px;
+    font-size: 1.8rem;
+
+}
+.button-extras {
+    display: flex;
+    flex-direction: row;
+}

@@ -1,15 +1,67 @@
-import React from 'react'
+import React, {useState, useEffect, useContext}  from 'react';
+import Button from '../components/Button';
+import {buttonListContext} from '../Contexts/buttonListContext';
+import '../stylesheets/PersonalButtons.css'; 
+import  PlusIcon from '../media/plusIcon.png'
+
 
 function PersonalButton(){
-    //TODO: fetch for all buttons created.
-    //      map response to create all buttons to be rendered.
-    //      function to send changes in buttons or new ones to the backend (POST)
-    //      'add button' function that adds a custom button at the end of the array and the view.
+    //      TODO: function to send changes in buttons or new ones to the backend (POST)
+
+    const [newButton, setNewButton] = useState(false);
+    const [customButtons, setCustomButtons] = useState([]);
+
+    const {buttonsList} = useContext(buttonListContext);
+
+
+    useEffect(() => {
+        setCustomButtons( buttonsList.map((button)=>{
+          return(
+              < Button
+                  index={button.index}
+                  key={button.text}
+                  text={button.text}
+                  emoji={button.emoji}
+                  color= {button.color}
+                  contacts={button.contacts}
+                  message={button.message}
+                  edit={true}
+                  disabled={button.disabled}
+                  buttonToAdd = {false} />
+          )
+          })
+      );
+    
+    }, [buttonsList]);
+    
+        
     return(
-        // TODO: Show buttons already created with an option on each one to edit it. When clicked it leads to EditButton view (currently named ContactRegister) with the specific button as prop.
-        //       'add button' icon, when clicked, renders a 'new button' form with choice of color, text, contact/s to send the message and if geolocalization is sent or not.
-        //       both edited and new buttons have to be connected to backend with POST requests.
-        <div>personal button</div>
+        <div className='main-container'>
+            <div className="buttons">
+                <h1>Mis Botones</h1>
+                {customButtons}
+                <img className= "addIcon"
+                    src= { PlusIcon }
+                    alt="plus Icon"
+                    title="Añadir botón"
+                    onClick={()=>setNewButton(!newButton)}
+                />
+                {newButton &&
+                    < Button 
+                        index={buttonsList.length}
+                        key='nuevo' text='Nuevo botón'
+                        emoji='🙋‍♂️' color= 'amarillo'
+                        contacts=''
+                        message=''
+                        edit={true}
+                        disabled={false}
+                        buttonToAdd={true}
+                        newButton={newButton}
+                        setNewButton={setNewButton}
+                    />
+                }
+            </div>
+        </div>
     );
 }
 

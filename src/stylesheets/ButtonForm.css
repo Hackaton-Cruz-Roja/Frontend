@@ -1,0 +1,74 @@
+.edit-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.label {
+    margin: 0 10px;
+}
+.input {
+    width: 85%;
+    margin-left: 10px;
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+}
+#mensaje {
+    width: 85%;
+    height: 50px;
+    margin: 0 auto 0 10px;
+}
+.select {
+    height: 2.2rem;
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+}
+.select-contact {
+    height: 2.2rem;
+    width: 135px;
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+}
+.select-yellow {
+    background-color: #D1F470;
+    color: black;
+    font-weight: 700;
+}
+.select-red {
+    background-color: red;
+    color: white;
+    font-weight: 700;
+}
+.select-green {
+    background-color: green;
+    color: white;
+    font-weight: 700;
+}
+.select-blue {
+    background-color: blue;
+    color: white;
+    font-weight: 700;
+}
+.section-container {
+    margin: 15px auto 0 0;
+}
+.checkbox-container {
+    width: 100%;
+    margin: 15px auto 0 0px;
+    display: flex;
+    justify-content: flex-start;
+}
+#sendLoc, #sendInfo {
+    width: 40px;
+}
+.form-button {
+    background-color: lightgrey;
+    box-shadow: none;
+    font-size: 1.1rem;
+    width: 60%;
+    margin: 15px auto;
+}
+.form-button:hover {
+    background-color: #4530A2;
+    color: white;
+}

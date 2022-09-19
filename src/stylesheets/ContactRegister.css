@@ -3,20 +3,47 @@
     justify-content: space-around;
     align-items: center;
 }
-.customcontainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 335px;
-    height: 505px;
-    border: 2px solid black;
-    box-shadow: 9.95064px 9.95064px 0px #000000;
+.contacts {
+    display:flex;
+    justify-content: center;
 }
 .addbutton {
-    width: 30%;
-    height: 30%;
+    width: 25%;
+    height: 25%;
     background: #C79EF8;
     border: 2px solid #000000;
     box-shadow: 6px 6px 0px #000000;
+}
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    width: 45%;
+}
+.editContactButton {
+    height: 1.5rem;
+    width: 60%;
+    margin: .5rem auto 1rem auto;
+    padding: .2rem;
+    border: solid 1px black;
+    background-color: #C79EF8;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 9.95064px 9.95064px 0px #000000;
+}
+input{
+    height: 2rem;
+    font-size:1.3rem;
+}
+#input-contactId {
+    width: 30px;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

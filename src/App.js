@@ -1,13 +1,18 @@
 import './App.css';
 import RoutesConfig from './routes/RoutesConfig';
-import NavBar from './components/NavBar';
+import {ButtonListProvider} from './Contexts/buttonListContext';
+import {ContactProvider} from './Contexts/contactContext';
+
 
 function App() {
   return (
-    <div className="App">
-      <NavBar/>
-      <RoutesConfig/>
-    </div>
+<ButtonListProvider>
+  <ContactProvider>
+        <div className="App">
+          <RoutesConfig/>
+        </div>
+  </ContactProvider>
+</ButtonListProvider>
   );
 }
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import '../stylesheets/LoginComp.css';
 import ProfileIcon from '../media/profileIcon.png';
 
@@ -38,12 +39,12 @@ const LoginComp = () => {
     
     let token = parseJwt(result.token)
     console.log(token);
-    //TODO: Save token in local storage.
+    // Save token in local storage.
+    window.localStorage.setItem('token', token);
     
-    if(result.token) {
+    if(token) {
         window.location.href='Home'
     }
-
 
     }
 
@@ -53,6 +54,7 @@ const LoginComp = () => {
             <input value={identificator} onChange={(e) => setIdentificator(e.target.value)} className='loginInput' placeholder='Usuario' type="text" />
             <input value={password} onChange={(e) => setPassword(e.target.value)} className='loginInput' placeholder='Contraseña' type="password" />
             <button onClick={signIn} className="login-button" type='submit'>LogIn</button>
+            <p>¿No tiene cuenta? <Link to='/register' title="Registrarse">¡Regístrese!</Link></p>
             
         </section>
     )

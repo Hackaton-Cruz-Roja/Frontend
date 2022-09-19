@@ -1,42 +1,76 @@
-.navbar-container img.profileIcon{
+img.profileIcon{
     width: 50px;
     height: 50px;
 } 
-
 div.navbar-container{
+    background-color: #4530A2;
+    height: 55px;
     display: flex;
     align-items: center;
     margin: auto;
     justify-content: space-between;
-    padding: 30px;
+    padding: 10px;
     text-align: left;
 }
-
-.navbar-icon{
-    color: none;
+.message{
+    font-size: large;
+    font-weight: 600;
+    color: white;
+}
+.dd-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 550px;
+}
+.dd-header-title{
+    transform: translateY(105px);
+    font-size: larger;
+    color: white;
     text-decoration: none;
     width: 50px;
     height: 50px;
+    filter: drop-shadow(1px 4px 0 black);
+    cursor: pointer;
 }
-
-button.btn.btn-secondary{
-    background-color: #2D1F30;
-    padding: 0;
-    border: none;
-    border-radius: 0;
-    margin: 0;
-    width: 50px;
-    height: 50px;
+.dd-list{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 0 black;
+    font-size: 1.5rem;
+    z-index: 15;
 }
-
+.dd-list.enabled{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(60px);
+    transition: all 0.2s ease-in;
+}
+.dd-list.disabled{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.2s ease-in;
+}
+.dd-list-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    background-color: #C79EF8;
+    padding: 15px;
+}
+.dd-list-item:hover{
+    background-color: #4530A2;
+    color: white;
+    font-weight: 700;
+}
 svg{
-    width: 50px;
     height: 50px;
-    color: none;
+    width: 50px;
 }
-
-
-button.btn.btn-secondary{
-    color: #000000;
-    background-color: transparent;
+.dd-list a{
+    color: black;
+    text-decoration: none;
 }

@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: max-content;
+    background: white;
+    border: 2px solid #000000;
+    box-shadow: 6px 6px 0px #000000;
+    border-radius: 42px;
+    margin: 20px;
+    padding: 10px;
+    user-select: none;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+    }
+    .specialbutton {
+        width: 85px;
+        height: 85px;
+        background: red;
+        border-radius: 50%;
+        box-shadow: 9.95064px 9.95064px 0px #000000;
+        margin: 0 auto;
+        font-weight: 700;
+        font-size: 33px;
+        text-align: center;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .addicon {
+        margin: 1 rem;
+    }

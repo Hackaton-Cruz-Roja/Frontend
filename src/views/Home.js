@@ -1,42 +1,58 @@
-import React, {useEffect, useState} from 'react'
-import Button from '../components/Button.js';
+import React, {useEffect, useState, useContext} from 'react'
+import Button from '../components/Button.jsx';
+import '../stylesheets/Home.css';
+import {buttonListContext} from '../Contexts/buttonListContext';
+
+let customButtons = [];
 
 function Home(){
    
-    // TODO:check for token in local storage. If there's not, redirect to login view.
-    //      fetch for custom buttons from API, using token from local storage. If empty, redirect to PersonalButton view.
-    //      map the response to generate customButtons nodes to be rendered.
+    const {buttonsList} = useContext(buttonListContext);
+    const [parsedToken, setParsedToken] = useState('');
 
-            //Download custom buttons from API REST (with FETCH)
-        useEffect(() => {
-        
-        fetch ('https://hackathon-final.herokuapp.com/configuration/create%27')
-            .then(async response => {
-                const data = await response.json();
-                
-                //check for error response
-                if (!response.ok) {
-                    //get error message from body or default to response status
-                    const error = (data && data.message)
-                    return Promise.reject(error);
-                }
-                
-                setPostID(data.id);
-            })
+    // Download custom buttons list from API REST.
+    useEffect(() => {
+
+        if (window.localStorage.getItem('token') != null) { 
+
+        setParsedToken(JSON.parse(window.localStorage.getItem('token')));
+
+
+        const urlButtons = 'https://hackathon-final.herokuapp.com/configuration/create%27'
+        fetch (urlButtons+parsedToken)
+            .then( response => response.json())
+            // .then( data => setButtonsList(data))
             .catch(error => {
-                setErrorMessage(error);
                 console.error('There was an error!', error);
             });
-        }, []);
+        }
 
+    }, [buttonsList, parsedToken]);
+
+    customButtons= buttonsList.map((button)=>{
+        return(
+        < Button
+            index={button.index}
+            key={button.text}
+            text={button.text}
+            emoji={button.emoji}
+            color= {button.color}
+            contacts={button.contacts}
+            message={button.message}
+            edit={false}
+            disabled={button.disabled}
+        />
+        )
+    })
 
     return(
         <div className="main-container" >
-        //     <Button text="Estoy bien" contacts={data.contact[0]} isEnabled={true} color='green' />
-        //     <Button text="Necesito ayuda" contacts={data.contact[0]} isEnabled={true} color='orange' />
-        //     <Button text="Emergencia 112" contacts={data.contact[0]} isEnabled={true} color='red' />
-
-            {/* {customButtons} */}
+            <div className="buttons">
+                {customButtons}
+                <div className="specialbutton">
+                    📞112
+                </div>
+            </div>
         </div>
     );
 }
