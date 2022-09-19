@@ -12,7 +12,7 @@ function ContactRegister(){
     const [newContact, setNewContact] = useState(false);
     const [customContacts, setCustomContacts] = useState([]);
 
-    const {contactList, setContactList} = useContext(contactContext);
+    const {contactList} = useContext(contactContext);
 
 
     useEffect(() => {
@@ -26,7 +26,7 @@ function ContactRegister(){
             </div>
             )}
         ))
-    }, [isDisabled]);
+    }, [isDisabled, contactList]);
 
     function editContact() {
         setIsDisabled(!isDisabled);

@@ -10,10 +10,10 @@ function EditButton({index, text, setButtonText, emoji, setButtonEmoji, contacts
   const[editing, setEditable] = useState('');
   const[toggleEdit, setToggleEdit] = useState(false);
   const[toggleForm, setToggleForm] =  useState('');
-  const [buttonIndex, setButtonIndex] = useState(index);
+  const [setButtonIndex] = useState(index);
   const [mostrar, setMostrar] = useState('Ocultar');
   const [hideIcon, setHideIcon] = useState('visibility_off');
-  const {buttonsList, setbuttonsList} = useContext(buttonListContext);
+  const {buttonsList} = useContext(buttonListContext);
 
   useEffect(() => {
     if(edit===true){
