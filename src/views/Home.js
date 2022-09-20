@@ -25,9 +25,8 @@ function Home(){
             .catch(error => {
                 console.error('There was an error!', error);
             });
-        }
-
-    }, [buttonsList, parsedToken]);
+        } 
+    }, [parsedToken]);
 
     customButtons= buttonsList.map((button)=>{
         return(
