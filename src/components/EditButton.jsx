@@ -38,7 +38,6 @@ function EditButton({index, text, setButtonText, emoji, setButtonEmoji, contacts
   }
 
   function toggleDisabled(){
-    setButtonIndex(buttonsList.findIndex((obj => obj.text === text)));
     setEnableInList(!enableInList);
     buttonsList[index].disabled = !buttonsList[index].disabled
 

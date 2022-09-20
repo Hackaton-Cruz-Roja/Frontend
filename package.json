@@ -16,15 +16,15 @@
     "react-icons": "^4.4.0",
     "react-popper": "^2.3.0",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "reactstrap": "^9.1.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "--env react-scripts build",
-    "test": "--env react-scripts test",
-    "eject": "--env react-scripts eject"
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -45,7 +45,6 @@
     ]
   },
   "devDependencies": {
-    "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0"
   }
 }
