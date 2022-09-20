@@ -1,0 +1,46 @@
+.edit-form-container {
+    margin-top: 10px;
+    display: block;
+    width: 300px;
+    border: 1px solid black;
+}
+.editContainer {
+    display: none;
+    width: 300px;
+    justify-content: space-around;
+    align-items: top;
+    height: max-content;
+    flex-wrap: wrap;
+}
+.edit {
+    display: flex;
+
+}
+.edit-icon {
+    font-size: .7rem;
+}
+.material-symbols-outlined {
+    transition: all 0.4s ease;
+    display: inline;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+.hide {
+    display: flex;
+    background: #C79EF8;
+    border: 2px solid #000000;
+    box-shadow: 6px 6px 0px #000000;
+}
+.hide.true{
+    display: none;
+}
+.hide-text{
+    margin-right: 5px;
+}
+.material-symbols-outlined.expand {
+    transform: rotate(180deg);
+    transition: all 0.4s ease;
+}
