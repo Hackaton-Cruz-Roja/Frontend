@@ -35,12 +35,12 @@ const RegisterComp = () => {
         <img className="profile-icon" src={ ProfileIcon } alt="profilepic"/>
 
         <input value={identificator} onChange={(e) => setIdentificator(e.target.value)} className='registerInput' placeholder='DNI/NIE' type="text" />
-        <input value={name} onChange={(e) => setName(e.target.value)} className='registerInput' placeholder='Name' type="text" />
-        <input value={surname} onChange={(e) => setSurname(e.target.value)} className='registerInput' placeholder='Surname' type="text" />
+        <input value={name} onChange={(e) => setName(e.target.value)} className='registerInput' placeholder='Nombre' type="text" />
+        <input value={surname} onChange={(e) => setSurname(e.target.value)} className='registerInput' placeholder='Apellido' type="text" />
         <input value={password} onChange={(e) => setPassword(e.target.value)} className='registerInput' placeholder='Password' type="password" />
         <input value={mail} onChange={(e) => setMail(e.target.value)} className='registerInput' placeholder='Email' type="text" />
-        <input value={phone} onChange={(e) => setPhone(e.target.value)} className='registerInput' placeholder='Phone number' type="text" />
-        <input value={observations} onChange={(e) => setObservations(e.target.value)} className='registerInput' placeholder='Observations' type="text" />
+        <input value={phone} onChange={(e) => setPhone(e.target.value)} className='registerInput' placeholder='Teléfono' type="text" />
+        <input value={observations} onChange={(e) => setObservations(e.target.value)} className='registerInput' placeholder='Datos de interés' type="text" />
         <button onClick={signUp} type='submit'>Register</button>
     </section>
   )

@@ -4,7 +4,6 @@ import {buttonListContext} from '../Contexts/buttonListContext';
 import ButtonForm from './ButtonForm';
 
 
-
 function EditButton({index, text, setButtonText, emoji, setButtonEmoji, contacts, color, setButtonColor, message, edit, enableInList, setEnableInList, disabled, buttonToAdd, newButton, setNewButton}) {
 
   const[editing, setEditable] = useState('');
@@ -58,8 +57,8 @@ function EditButton({index, text, setButtonText, emoji, setButtonEmoji, contacts
     setHideIcon('visibility_off');
     setEnableInList('');
     }
-
   }
+  
   return (
     <div className={`editContainer ${editing}`}>
       <div className="edit" onClick={toggleEditForm}>Editar 
